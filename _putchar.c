@@ -1,11 +1,12 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - Custom putchar function
- * @c: Character to be written
- * Return: The number of characters written
+ * _putchar - prints/writes character
+ * @character: The character to print
+ * Return: 1, success, -1 error
  */
-int _putchar(char c)
+
+int _putchar(char character)
 {
-    return write(1, &c, 1);
+	return (write(1, &character, 1));
 }
